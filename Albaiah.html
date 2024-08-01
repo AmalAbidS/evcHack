@@ -138,6 +138,22 @@
             margin-bottom: 10px; /* Space between list items */
             color: #624301;
         }
+         @media (max-width: 100px) {
+            .content-container {
+                flex-direction: column; /* Stack video and text vertically on smaller screens */
+                top: 10%;
+                text-align: center;
+                
+            }
+            .video-container,
+            .text-content {
+                margin: 0; /* Remove margins on smaller screens */
+            }
+            .video-container iframe {
+                height: 50px; /* Adjust height of the video on smaller screens */
+                width: 50px;
+            }
+        }
         hr {
             border: none; /* Removes any border */
             height: 0; /* Sets height to 0 */
